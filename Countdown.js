@@ -87,8 +87,9 @@ var styles = StyleSheet.create({
     },
 
     text: {
-        fontSize: 20,
+        fontSize: 25,
         color: 'white',
+        fontWeight: 'bold',
     },
 
 });
