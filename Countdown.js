@@ -60,24 +60,23 @@ var styles = StyleSheet.create({
         paddingHorizontal: 32,
         borderRadius: 10,
         elevation: 3,
-        //backgroundColor: buttonColor,
         width: 200,
         marginBottom: 40,
 
     },
 
-     adjustButton: {
-            alignItems: 'center',
-            justifyContent: 'center',
-            paddingVertical: 12,
-            paddingHorizontal: 32,
-            borderRadius: 10,
-            elevation: 3,
-            backgroundColor: '#24A0ed',
-            width: 200,
-            marginBottom: 40,
+    adjustButton: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 10,
+        elevation: 3,
+        backgroundColor: '#24A0ed',
+        width: 200,
+        marginBottom: 40,
 
-        },
+    },
 
     startContainer: {
         alignItems: 'center',
@@ -248,7 +247,7 @@ const Countdown = (props) => {
 
         else {
             setRunning(true)
-           setButtonColor("green")
+            setButtonColor("green")
             setButton("Start")
 
 
