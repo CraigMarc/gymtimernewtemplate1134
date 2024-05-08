@@ -28,6 +28,7 @@ const App = () => {
   const [timer, setTimer] = useState("03:00");
   const [running, setRunning] = useState(true)
   const [button, setButton] = useState("Start")
+  const [buttonColor, setButtonColor] = useState("green")
 
 
   return (
@@ -39,6 +40,8 @@ const App = () => {
         setRunning={setRunning}
         button={button}
         setButton={setButton}
+        buttonColor={buttonColor}
+        setButtonColor={setButtonColor}
       />
 
     </>

@@ -16,6 +16,8 @@ import {
     Pressable,
 } from 'react-native';
 
+
+
 // sound code
 
 var buzzer = new Sound('buzzer.wav', Sound.MAIN_BUNDLE, (error) => {
@@ -58,11 +60,24 @@ var styles = StyleSheet.create({
         paddingHorizontal: 32,
         borderRadius: 10,
         elevation: 3,
-        backgroundColor: '#24A0ed',
+        //backgroundColor: buttonColor,
         width: 200,
         marginBottom: 40,
 
     },
+
+     adjustButton: {
+            alignItems: 'center',
+            justifyContent: 'center',
+            paddingVertical: 12,
+            paddingHorizontal: 32,
+            borderRadius: 10,
+            elevation: 3,
+            backgroundColor: '#24A0ed',
+            width: 200,
+            marginBottom: 40,
+
+        },
 
     startContainer: {
         alignItems: 'center',
@@ -93,9 +108,12 @@ const Countdown = (props) => {
         setRunning,
         button,
         setButton,
-
+        buttonColor,
+        setButtonColor,
 
     } = props;
+
+
 
     // var to disable buttons
     let disable = false
@@ -171,6 +189,7 @@ const Countdown = (props) => {
 
         if (total == 0) {
             setButton("Reset")
+            setButtonColor('#24A0ed')
             buzzer.play(success => {
                 if (success) {
                     console.log('successfully finished playing');
@@ -222,11 +241,14 @@ const Countdown = (props) => {
 
         if (running == true) {
             setRunning(false)
+            setButtonColor("red")
             setButton("Stop")
 
         }
+
         else {
             setRunning(true)
+           setButtonColor("green")
             setButton("Start")
 
 
@@ -238,6 +260,8 @@ const Countdown = (props) => {
 
         clearTimer(getDeadTime());
     };
+
+    console.log(buttonColor)
 
     const onClickIncrease = () => {
 
@@ -279,7 +303,7 @@ const Countdown = (props) => {
             <View style={styles.timeControl}>
                 <Pressable
                     onPress={onClickIncrease}
-                    style={styles.button}
+                    style={styles.adjustButton}
                     disabled={disable}
                 >
                     <Text style={styles.text}>Increase</Text>
@@ -287,7 +311,7 @@ const Countdown = (props) => {
 
                 <Pressable
                     onPress={onClickDecrease}
-                    style={styles.button}
+                    style={styles.adjustButton}
                     disabled={disable}
                 >
                     <Text style={styles.text}>Decrease</Text>
@@ -298,6 +322,7 @@ const Countdown = (props) => {
                 <Pressable
                     onPress={onClickReset}
                     style={styles.button}
+                    backgroundColor={buttonColor}
                 >
                     <Text style={styles.text}>{button}</Text>
                 </Pressable>
