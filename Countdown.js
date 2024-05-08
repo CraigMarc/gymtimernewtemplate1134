@@ -260,7 +260,6 @@ const Countdown = (props) => {
         clearTimer(getDeadTime());
     };
 
-    console.log(buttonColor)
 
     const onClickIncrease = () => {
 
