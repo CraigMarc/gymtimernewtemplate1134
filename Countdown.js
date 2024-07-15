@@ -16,7 +16,7 @@ import {
     Pressable,
 } from 'react-native';
 
-
+import Banner from './Banner.js'
 
 // sound code
 
@@ -91,6 +91,10 @@ var styles = StyleSheet.create({
         color: 'white',
         fontWeight: 'bold',
     },
+
+    bannerContainer: {
+           paddingTop: 10,
+        },
 
 });
 
@@ -325,6 +329,9 @@ const Countdown = (props) => {
                 >
                     <Text style={styles.text}>{button}</Text>
                 </Pressable>
+            </View>
+            <View style={styles.bannerContainer}>
+            <Banner />
             </View>
         </View>
     );

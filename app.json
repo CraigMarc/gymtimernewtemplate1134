@@ -1,4 +1,7 @@
 {
   "name": "gymtimernewtemplate1134",
-  "displayName": "gymtimernewtemplate1134"
+  "displayName": "gymtimernewtemplate1134",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-3866044541725967~1019232610"
+  }
 }
