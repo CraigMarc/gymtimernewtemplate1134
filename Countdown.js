@@ -93,7 +93,7 @@ var styles = StyleSheet.create({
     },
 
     bannerContainer: {
-           paddingTop: 10,
+           paddingTop: 15,
         },
 
 });
