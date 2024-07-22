@@ -37,13 +37,17 @@ buzzer.setVolume(1);
 
 var styles = StyleSheet.create({
 
+safe: {
+       flex: 1,
+    },
+
     title: {
         fontWeight: 'bold',
         fontSize: 45,
         textAlign: 'center',
         paddingBottom: 20,
         paddingTop: 10,
-        marginBottom: 60,
+        marginBottom: 40,
 
     },
 
@@ -94,6 +98,7 @@ var styles = StyleSheet.create({
 
     bannerContainer: {
            paddingTop: 15,
+
         },
 
 });
@@ -297,6 +302,7 @@ const Countdown = (props) => {
 
 
     return (
+    <SafeAreaView style={styles.safe}>
         <View>
             <Text
                 style={styles.title}
@@ -334,6 +340,7 @@ const Countdown = (props) => {
             <Banner />
             </View>
         </View>
+        </SafeAreaView>
     );
 
 };
