@@ -47,7 +47,7 @@ safe: {
         textAlign: 'center',
         paddingBottom: 20,
         paddingTop: 10,
-        marginBottom: 40,
+        marginBottom: 35,
 
     },
 
