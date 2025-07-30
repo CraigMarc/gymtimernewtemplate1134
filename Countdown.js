@@ -39,6 +39,7 @@ var styles = StyleSheet.create({
 
 safe: {
        flex: 1,
+       marginTop: StatusBar.currentHeight,
     },
 
     title: {
@@ -303,6 +304,9 @@ const Countdown = (props) => {
 
     return (
     <SafeAreaView style={styles.safe}>
+    <StatusBar
+         barStyle="dark-content"
+        />
         <View>
             <Text
                 style={styles.title}
