@@ -64,7 +64,6 @@ safe: {
         paddingVertical: 12,
         paddingHorizontal: 32,
         borderRadius: 10,
-        elevation: 3,
         width: 200,
         marginBottom: 40,
 
@@ -76,7 +75,6 @@ safe: {
         paddingVertical: 12,
         paddingHorizontal: 32,
         borderRadius: 10,
-        elevation: 3,
         backgroundColor: '#24A0ed',
         width: 200,
         marginBottom: 40,
