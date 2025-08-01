@@ -302,8 +302,10 @@ const Countdown = (props) => {
 
     return (
     <SafeAreaView style={styles.safe}>
+
     <StatusBar
          barStyle="dark-content"
+         backgroundColor="transparent"
         />
         <View>
             <Text
